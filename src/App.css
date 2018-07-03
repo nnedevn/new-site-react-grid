@@ -8,16 +8,33 @@ nav {
   list-style: none;
 }
 
-nav li:first-child {
+/* nav li:first-child {
   grid-column-start: 2;
   grid-column-end: 3;
-  /* background-color: red; */
-}
+  /* background-color: red;
+} */
 
 nav li a {
   text-decoration: none;
 }
 
-.displayToggle{
+
+.narrow-nav{
+  display:none;
+}
+.displayMobileNav{
+  display: block;
   color: red;
+}
+.hideMobileNav{
+  display: none;
+}
+
+@media (max-width: 450px){
+  .wide-nav{
+    display: none;
+  }
+  .narrow-nav{
+    display:block;
+  }
 }
