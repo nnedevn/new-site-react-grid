@@ -32,21 +32,21 @@ class Navigation extends Component {
           <a onClick={this.burgerToggle}>
             <i className="fa fa-bars fa-2x" />
           </a>
-          <div
-            className="narrow-links"
-            className={
-              this.state.menuToggleActive ? "displayMobileNav" : "hideMobileNav"
-            }
-          >
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+          
+          <div className="narrow-links"
+              className={this.state.menuToggleActive ? "slide-down" : "slide-up"}>
+            <div>
+              
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </div>
           </div>
         </ul>
       </nav>

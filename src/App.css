@@ -2,6 +2,7 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
+/* Navigation Styles */
 nav {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -22,13 +23,26 @@ nav li a {
 .narrow-nav{
   display:none;
 }
-.displayMobileNav{
+/* .displayMobileNav{
   display: block;
   color: red;
-}
+} */
 .hideMobileNav{
   display: none;
 }
+
+.slide-up, .slide-down {
+  max-height: 0;            
+  overflow-y: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+.slide-down {            
+  max-height: 60px ;                    
+}    
+.slider.closed{
+  max-height: 0;
+}
+/* End Navigation Styles */
 
 @media (max-width: 450px){
   .wide-nav{
@@ -36,5 +50,7 @@ nav li a {
   }
   .narrow-nav{
     display:block;
+    grid-column: 1/3;
   }
 }
+
