@@ -1,3 +1,18 @@
 body{
   font-family: 'Source Code Pro', monospace;
 }
+
+nav {
+  display: grid;
+  grid-template-columns:20% 20% 20% 20% 20%;
+  list-style: none;
+}
+
+nav li:first-child{
+  grid-column-start: 2;
+  grid-column-end:3;
+  /* background-color: red; */
+}
+nav li a{
+  text-decoration: none;
+}

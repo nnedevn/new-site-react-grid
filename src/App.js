@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 // Import Components
+import Navigation from './Components/Navigation';
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
@@ -22,17 +23,7 @@ const App = () => {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <nav role="nav">
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </nav>
+        <Navigation />
 
         <div>
           <Route exact path="/" component={About} />
