@@ -1,19 +1,29 @@
+:root{
+  --border-color: #000;
+}
+
 body {
   font-family: "Source Code Pro", monospace;
+  margin: 30px 60px;
 }
 
 /* Navigation Styles */
-nav {
+.wide-nav {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 33% 33% 33%;
   list-style: none;
+  border-top: 1px dashed var(--border-color, #000);
+  border-bottom: 1px dashed var(--border-color, #000);
+  text-align: center;
+  padding: 20px 0 20px 0;
 }
 
-/* nav li:first-child {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  /* background-color: red;
-} */
+.wide-nav li:first-child {
+  /* grid-column-start:2;
+  grid-column-end: 3; */
+  /* width:100%; */
+   background-color: red;
+}
 
 nav li a {
   text-decoration: none;
@@ -44,6 +54,9 @@ nav li a {
 }
 /* End Navigation Styles */
 
+
+/* MEDIA QUERIES */
+
 @media (max-width: 450px){
   .wide-nav{
     display: none;
@@ -54,3 +67,4 @@ nav li a {
   }
 }
 
+/* END MEDIA QUERIES */
