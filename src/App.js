@@ -22,6 +22,8 @@ const App = () => {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <h1>Nick Nedev</h1>
+          <h2>Full Stack Web Developer</h2>
         </header>
         <Navigation />
 

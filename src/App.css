@@ -7,6 +7,22 @@ body {
   margin: 30px 60px;
 }
 
+.App-header{
+  display: grid;
+  grid-template-columns: 20% 30% auto;
+  grid-template-rows: 20% 20%;
+}
+.App-header h1{
+margin: 0;
+padding: 0;
+
+}
+.App-header h2{
+  margin: 0;
+  grid-row-start: 2;
+  grid-column-start:2;
+}
+
 /* Navigation Styles */
 .wide-nav {
   display: grid;
@@ -67,4 +83,9 @@ nav li a {
   }
 }
 
+@media (max-width: 600px){
+  .App-header{
+    display:none;
+  }
+}
 /* END MEDIA QUERIES */
