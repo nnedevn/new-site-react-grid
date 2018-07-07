@@ -8,10 +8,11 @@ class Footer extends Component{
         <span>This is the footer.</span>
         <ul>
           <li>
-          <i class="fab fa-linkedin"></i>
-
-
+            <i className="fab fa-linkedin"></i>
           </li>
+           <li>
+             <i className="fab fa-github"></i>
+           </li>
         </ul>
       </footer>
     )

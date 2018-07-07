@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 // Import Components
-import Navigation from './Components/Navigation';
+import Navigation from "./Components/Navigation";
 import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Projects from "./Components/Projects";
@@ -18,7 +18,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router className="App-intro">
+    <Router className="App-router">
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -26,16 +26,14 @@ const App = () => {
             <h1>Nick Nedev</h1>
             <h2>Full Stack Web Developer</h2>
           </div>
-       
         </header>
         <Navigation />
-
-        <div>
+        <div className="main-content">
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/resume" component={Resume} />
-        </div>
+        </div> 
         <Footer />
       </div>
     </Router>

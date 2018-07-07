@@ -1,30 +1,55 @@
-:root{
+:root {
   --border-color: #000;
 }
 
+html,
 body {
+
+}
+body {
+
   font-family: "Source Code Pro", monospace;
   margin: 30px 60px;
 }
 
-.App-header{
+.App {
+  height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 100px 1fr 80px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+.App-header {
+  grid-area: header;
   display: grid;
   grid-template-columns: 15% 30%;
   grid-template-rows: 20% 20%;
 }
-.App-header h1{
-margin: 0;
-padding: 0;
 
+.App-header h1 {
+  margin: 0;
+  padding: 0;
 }
-.App-header h2{
+
+.App-header h2 {
   margin: 0;
   grid-row-start: 2;
-  grid-column-start:2;
+  grid-column-start: 2;
 }
 
 /* Navigation Styles */
+
+nav {
+  grid-area: nav;
+}
 .wide-nav {
+  grid-area: nav;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   list-style: none;
@@ -35,63 +60,66 @@ padding: 0;
 }
 
 .wide-nav li:first-child {
-  /* grid-column-start:2;
-  grid-column-end: 3; */
-  /* width:100%; */
-   background-color: red;
+  background-color: red;
 }
 
 nav li a {
   text-decoration: none;
 }
 
-
-.narrow-nav{
-  display:none;
-}
-/* .displayMobileNav{
-  display: block;
-  color: red;
-} */
-.hideMobileNav{
+.narrow-nav {
   display: none;
 }
 
-.slide-up, .slide-down {
-  max-height: 0;            
+.hideMobileNav {
+  display: none;
+}
+
+.slide-up,
+.slide-down {
+  max-height: 0;
   overflow-y: hidden;
   transition: max-height 0.5s ease-in-out;
 }
-.slide-down {            
-  max-height: 60px ;                    
-}    
-.slider.closed{
+
+.slide-down {
+  max-height: 60px;
+}
+
+.slider.closed {
   max-height: 0;
 }
 /* End Navigation Styles */
 
+.main-content {
+  grid-area: main;
+}
 
-footer{
-  position: absolute;
-  bottom: 50px;
+footer {
+  grid-area: footer;
+}
+
+
+footer ul li {
+  list-style: none;
 }
 
 
 /* MEDIA QUERIES */
 
-@media (max-width: 450px){
-  .wide-nav{
+@media (max-width: 450px) {
+  .wide-nav {
     display: none;
   }
-  .narrow-nav{
-    display:block;
+  .narrow-nav {
+    display: block;
     grid-column: 1/3;
   }
 }
 
-@media (max-width: 600px){
-  .App-header{
-    display:none;
+@media (max-width: 600px) {
+  .App-header {
+    display: none;
   }
 }
 /* END MEDIA QUERIES */
