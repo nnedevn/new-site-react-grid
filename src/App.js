@@ -10,9 +10,9 @@ import {
 // Import Components
 import Navigation from './Components/Navigation';
 import About from "./Components/About";
-import Contact from "./Components/Contact";
+import Resume from "./Components/Resume";
 import Projects from "./Components/Projects";
-
+import Footer from "./Components/Footer";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -22,8 +22,11 @@ const App = () => {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Nick Nedev</h1>
-          <h2>Full Stack Web Developer</h2>
+          <div>
+            <h1>Nick Nedev</h1>
+            <h2>Full Stack Web Developer</h2>
+          </div>
+       
         </header>
         <Navigation />
 
@@ -31,8 +34,9 @@ const App = () => {
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/resume" component={Resume} />
         </div>
+        <Footer />
       </div>
     </Router>
   );

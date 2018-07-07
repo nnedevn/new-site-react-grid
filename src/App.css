@@ -9,7 +9,7 @@ body {
 
 .App-header{
   display: grid;
-  grid-template-columns: 20% 30% auto;
+  grid-template-columns: 15% 30%;
   grid-template-rows: 20% 20%;
 }
 .App-header h1{
@@ -69,6 +69,12 @@ nav li a {
   max-height: 0;
 }
 /* End Navigation Styles */
+
+
+footer{
+  position: absolute;
+  bottom: 50px;
+}
 
 
 /* MEDIA QUERIES */
