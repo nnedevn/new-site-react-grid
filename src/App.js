@@ -20,7 +20,7 @@ const App = () => {
   return (
     <Router className="App-router">
       <div className="App">
-        <header className="App-header">
+        <header className="header item">
           <img src={logo} className="App-logo" alt="logo" />
           <div>
             <h1>Nick Nedev</h1>
@@ -28,7 +28,7 @@ const App = () => {
           </div>
         </header>
         <Navigation />
-        <div className="main-content">
+        <div className="main-content item">
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />

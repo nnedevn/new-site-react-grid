@@ -15,7 +15,7 @@ class Navigation extends Component {
 
   render() {
     return (
-      <nav crole="nav">
+      <nav role="nav item">
         <ul className="wide-nav">
           <li>
             <Link to="/about">About</Link>
