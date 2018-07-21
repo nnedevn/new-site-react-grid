@@ -32,11 +32,13 @@ class Navigation extends Component {
           <a onClick={this.burgerToggle}>
             <i className="fa fa-bars fa-2x" />
           </a>
-          
-          <div className="narrow-links"
-              className={this.state.menuToggleActive ? "slide-down" : "slide-up"}>
+
+          <div
+            className="narrow-links"
+            className={this.state.menuToggleActive ? "slide-down" : "slide-up"}
+          >
+          {console.log(this.state.menuToggleActive)}
             <div>
-              
               <li>
                 <Link to="/about">About</Link>
               </li>
@@ -44,7 +46,7 @@ class Navigation extends Component {
                 <Link to="/projects">Projects</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/resume">Contact</Link>
               </li>
             </div>
           </div>
