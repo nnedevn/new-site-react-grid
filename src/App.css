@@ -71,7 +71,7 @@ footer ul li {
   }
   .slide-down {
     transition: height 2s;
-    height: 100px;
+    height: 70px;
   }
 
   .slide-up {

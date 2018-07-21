@@ -15,7 +15,7 @@ class Navigation extends Component {
 
   render() {
     return (
-      <nav role="nav item">
+      <nav>
         <ul className="wide-nav">
           <li>
             <Link to="/about">About</Link>
@@ -34,10 +34,13 @@ class Navigation extends Component {
           </a>
 
           <div
-            className="narrow-links"
-            className={this.state.menuToggleActive ? "slide-down" : "slide-up"}
+            className={
+              this.state.menuToggleActive
+                ? "narrow-links slide-down"
+                : "narrow-links slide-up"
+            }
           >
-          {console.log(this.state.menuToggleActive)}
+            {console.log(this.state.menuToggleActive)}
             <div>
               <li>
                 <Link to="/about">About</Link>

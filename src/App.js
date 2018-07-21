@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
   Link,
-  Switch,
-  Redirect
 } from "react-router-dom";
 
 // Import Components
@@ -21,7 +19,9 @@ const App = () => {
     <Router className="App-router">
       <div className="App">
         <header className="header item">
+        <Link to={'/'}>
           <img src={logo} className="App-logo" alt="logo" />
+        </Link>  
           <div>
             <h1>Nick Nedev</h1>
             <h2>Full Stack Web Developer</h2>
