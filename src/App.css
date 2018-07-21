@@ -34,10 +34,12 @@ header > div {
 }
 
 .narrow-nav {
- transition: height 2s;
+  display: none;
+}
+.narrow-links {
+  height: 100px;
+  transition: height 2s;
   height: 0px;
-  overflow: hidden;
-  
 }
 .main-content {
   flex: 1;
@@ -63,18 +65,17 @@ footer ul li {
     display: none;
   }
 
-  .narrow-nav{
-    height: auto;
-  }
-   .slide-down {
+  .narrow-nav {
     display: block;
-    height: auto;
-   }
+    overflow: hidden;
+  }
+  .slide-down {
+    transition: height 2s;
+    height: 100px;
+  }
 
-   .slide-up{
-     height: 0px;
-   }
-   
-
-
+  .slide-up {
+    transition: height 2s;
+    height: 0px;
+  }
 }
