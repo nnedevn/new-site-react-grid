@@ -1,0 +1,52 @@
+.project{
+  
+  margin-top: 20px;
+  max-height: 200px;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows:  auto auto auto;
+  /* grid-gap: 20px; */
+}
+
+.project img{
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+}
+
+.project h2{
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.devicons{
+
+  grid-row-start: 4;
+  grid-column-start: 1;
+  list-style: none; 
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  grid-template-rows: auto;                                                                                         
+}
+
+.project p{
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.project .buttons{
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+button{
+  font-family: 'Source Code Pro', monospace;
+  margin: 5px 10px;
+
+}
+
+
+
+
+
+

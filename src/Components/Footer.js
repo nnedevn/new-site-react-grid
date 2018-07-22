@@ -6,10 +6,10 @@ class Footer extends Component {
       <footer className="item">
         <ul>
           <li>
-            <i className="fab fa-linkedin" />
+            <a href=""><i className="fab fa-linkedin" /></a>
           </li>
           <li>
-            <i className="fab fa-github" />
+            <a href=""><i className="fab fa-github" /></a>
           </li>
         </ul>
       </footer>
