@@ -15,6 +15,7 @@
 }
 
 .project h2{
+  margin: 0 10px;
   grid-column-start: 2;
   grid-column-end: -1;
 }
@@ -30,6 +31,7 @@
 }
 
 .project p{
+  margin: 0 10px;
   grid-row-start: 2;
   grid-column-start: 2;
   grid-column-end: -1;
@@ -43,8 +45,21 @@ button{
   font-family: 'Source Code Pro', monospace;
   margin: 5px 10px;
 
+  position: relative;
+  height: 45px;
+  width: 150px;
+  border: 2px solid #000;
+  background: none;
+  outline: 0;
+  overflow: hidden;
+  z-index: 1;
+  transition: .1s ease-in;
+
 }
 
+.fill:hover {
+  color:#FFF;
+}
 
 
 
